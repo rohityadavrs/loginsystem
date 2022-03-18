@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="adminform.css">
+</head>
+
+<body>
+  <div class="popup" id="popup-1">
+    <div class="content">
+      <div class="close-btn" onclick="togglePopup()">
+        ×</div><br>
+        <div class="input-field">
+        <input type="text" placeholder="Employee ID" class="validate" required>
+      </div>
+      
+      <div class="input-field">
+        <input type="text" placeholder="Employee First Name" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee Last Name" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="number" placeholder="Employee contact" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="password" placeholder="Password" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee Base Location" class="validate" required>
+      </div>
+      <div class="input-field">
+        <input type="text" placeholder="Employee Report-To" class="validate" required>
+      </div>
+      <button onclick="required ()" class="second-button">Submit</button>
+    </div>
+  </div>
+  <button onclick="togglePopup()" class="first-button">Sign In</button>
+  <script>
+    function togglePopup() {
+      document.getElementById("popup-1")
+        .classList.toggle("active");
+    }
+
+//    function required() {
+//      var userId = document.getElementById("id");
+//      var username = document.getElementById("First_name");
+//      var userLname = document.getElementById("Last_name");
+//      var usercontact = document.getElementById("Contact");
+//      var userlocation = document.getElementById("Location");
+//      var userreport = document.getElementById("report");
+//      if (userId.length === 0) {
+//        alert("enter the Id");
+//      }
+//      if (username.length == 0) {
+//        alert("enter the name");
+//      }
+//      if (userLname.length == 0) {
+//        alert(" enter the last name");
+//      }
+//      if (usercontact.length == 0) {
+//        alert(" enter the contact");
+//      }
+//      if (userlocation.length == 0) {
+//        alert(" enter the location");
+//      }
+//      if (userreport.length == 0) {
+//        alert(" enter the report to ");
+//      }
+//    }
+  </script>
+
+</body>
+
+</html>
